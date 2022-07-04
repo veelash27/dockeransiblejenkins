@@ -21,8 +21,8 @@
         state: present
     - name: Start the container
       docker_container:
-        name: jenkinsapp
-        image: "veelashpat/jenkinsapp:{{DOCKER_TAG}}"
+        name: pipeline
+        image: "veelashpat/pipeline:0.0.1"
         state: started
         published_ports:
           - 0.0.0.0:8080:8080
